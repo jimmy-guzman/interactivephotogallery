@@ -1,0 +1,30 @@
+.gallery-box {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  padding: 5%;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  margin-left: 2em;
+}
+
+.wrap {
+  width: 70%;
+  margin: auto;
+}
+
+.gallery-box a img{
+    box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, .8);
+    margin: 0 2em 3em 0;
+}
+
+.lg-backdrop.in {
+  opacity: .78;
+}
