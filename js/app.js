@@ -7,7 +7,7 @@ $(document).ready(function() {
       toogleThumb: false,
       showThumbByDefault: false,
       fullScreen: false,
-      width: '60%'
+      width: '50%',
     });
 });
 
@@ -18,7 +18,7 @@ function searchGallery() {
     var input, filter, a, img;
     input = document.getElementById('myInput');
     filter = input.value.toUpperCase();
-    a = document.getElementsByClassName('picture');
+    a = document.getElementsByClassName('thumbnail');
 
     // Loop through all a(picture) items, and hide a(pictures) who don't match the search criteria
     for (var i = 0; i < a.length; i++) {
