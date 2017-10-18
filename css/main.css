@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background: #29373B
+}
+
 .gallery-box {
   display: flex;
   justify-content: space-around;
@@ -23,12 +27,12 @@
 .wrap {
   width: 100%;
   margin: auto;
-  max-width: 1440px;
+
 }
 
 .gallery-box a img{
     box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, .8);
-    margin-bottom: 1.6em;
+    margin: 1em;
 }
 
 .lg-backdrop.in {
@@ -36,14 +40,75 @@
 }
 
 #myInput {
-    font-size: 1.3em;
+  background: #29373B;
+  color: #E8FAFF;
+    font-size: 1.5em;
     width: 100%;
-    padding: 1em;
+    padding: .5em;
     border: none;
-    margin-bottom: 1.3em ;
-    box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, .8);
+      border-bottom: .4em solid #FFF6CC;
 }
 
+#myInput::placeholder {
+  color: #FFF6CC;;
+  font-style: italic;
+  opacity: .5;
+}
+
+#myInput:focus {
+    outline: none;
+    border-bottom: .4em solid #E8FAFF;
+}
+
+
+/*---------------search---------------*/
 .search-box {
-  width: 100%;
+  width: 60%;
+  margin-top: 2.6em;
+  margin-bottom: 2.6em;
+}
+/*----------media queries------------*/
+
+@media (min-width:768px) {
+  .wrap {
+    width: 95%;
+  }
+
+  .search-box {
+    width: 50%;
+  }
+
+  /*.gallery-box {
+    justify-content: space-between;
+  }*/
+}
+
+
+
+@media (min-width:1024px) {
+  .wrap {
+    width: 90%;
+
+  }
+}
+
+@media (min-width:1280px) {
+  .wrap {
+    width: 80%;
+
+  }
+}
+
+@media (min-width:1440px) {
+  .wrap {
+    width: 70%;
+
+  }
+}
+
+@media (min-width:1600px) {
+  .wrap {
+    width: 60%;
+
+  }
 }
