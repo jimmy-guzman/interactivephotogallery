@@ -7,7 +7,6 @@ $(document).ready(function() {
       toogleThumb: false,
       showThumbByDefault: false,
       fullScreen: false,
-      width: '50%',
     });
 });
 

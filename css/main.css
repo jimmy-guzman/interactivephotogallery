@@ -5,18 +5,22 @@
 }
 
 body {
-  background: #29373B
+  background: #29373B;
+  font-family: 'Saira Extra Condensed', sans-serif;
 }
 
-
 /*----------Layout Containers----------*/
+
+.wrap {
+  width: 100%;
+  margin: auto;
+}
 
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /*margin-left: 2em;*/
 }
 
 /*---------------search---------------*/
@@ -35,19 +39,19 @@ body {
   padding: .5em;
   border: none;
   border-bottom: .3em solid #E8FAFF;
-
+  font-family: 'Saira Extra Condensed', sans-serif;
 }
 
 #myInput::placeholder {
   color: #E8FAFF;
   font-style: italic;
   opacity: .5;
+  font-family: 'Saira Extra Condensed', sans-serif;
 }
 
 #myInput:focus {
   outline: none;
   border-bottom: .3em solid #E8FAFF;
-
 }
 
 /*----------Gallery Box----------*/
@@ -57,79 +61,81 @@ body {
   justify-content: space-around;
   flex-flow: row wrap;
   width: 100%;
-  margin: auto;
 }
-  .wrap {
-    width: 100%;
-    margin: auto;
-  }
+
 /*-------Gallery Zoom-----------*/
-  .lg-backdrop.in {
-    opacity: .7;
-  }
-.lg-sub-html {
-  font-size: 1.1em;
-  background-color: rgba(0,0,0,0);
-  bottom: 7%;
+
+.lg-backdrop.in {
+  opacity: .7;
 }
 
-  /*----------Thumbnail Styles----------*/
+.lg-sub-html {
+  font-size: 1.3em;
+  background-color: rgba(0, 0, 0, 0);
+    bottom: 15%;
+}
 
-  .gallery-box a {
-    margin: 2%;
-  }
-  .gallery-box a img {
-    box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, .8);
-  }
-  /*----------media queries------------*/
-  /*
+
+
+/*----------Thumbnail Styles----------*/
+
+.gallery-box a {
+  margin: 2% 0;
+}
+
+.gallery-box a img {
+  box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, .8);
+}
+
+/*----------media queries------------*/
+
+/*
 @media (min-width:414px) {
   .wrap {
     width: 100%;
   }
 /*/
+
 @media (min-width:768px) {
   .wrap {
     width: 95%;
   }
-
   #myInput {
     font-size: 1.5em;
   }
   .search-box {
     width: 50%;
   }
-
-  /*.gallery-box {
-    justify-content: space-between;
-  }*/
+  .lg-sub-html {
+    font-size: 1.3em;
+    background-color: rgba(0, 0, 0, .4);
+    bottom: 7%;
+  }
 }
-
 
 @media (min-width:1024px) {
   .wrap {
     width: 90%;
-
+  }
+  .gallery-box a {
+    margin: 2%;
   }
 }
 
 @media (min-width:1280px) {
   .wrap {
     width: 85%;
-
   }
 }
 
 @media (min-width:1440px) {
   .wrap {
     width: 75%;
-
   }
 }
 
 @media (min-width:1600px) {
   .wrap {
     width: 65%;
-
   }
 }
