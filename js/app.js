@@ -13,19 +13,19 @@ $(document).ready(function() {
 
 //search function
 function searchGallery() {
-    // Variable declaration
-    var input, filter, a, img;
-    input = document.getElementById('myInput');
-    filter = input.value.toUpperCase();
-    a = document.getElementsByClassName('thumbnail');
 
-    // Loop through all a(picture) items, and hide a(pictures) who don't match the search criteria
-    for (var i = 0; i < a.length; i++) {
-        img = a[i].getElementsByTagName("img")[0];
-        if (img.alt.toUpperCase().indexOf(filter) > -1 || img.title.toUpperCase().indexOf(filter) > -1) {
-            a[i].style.display = "";
+    var input, thumbnails, img;
+    input = document.getElementById('userInput');
+    input = input.value.toUpperCase();
+    thumbnails = document.getElementsByClassName('thumbnail');
+
+    // Loop through all thumbnails items alt and title attributes and hide the thumbnails that do not match
+    for (var i = 0; i < thumbnails.length; i++) {
+        img = thumbnails[i].getElementsByTagName("img")[0];
+        if (img.alt.toUpperCase().indexOf(input) > -1 || img.title.toUpperCase().indexOf(input) > -1) {
+            thumbnails[i].style.display = "";
         } else {
-            a[i].style.display = "none";
+            thumbnails[i].style.display = "none";
         }
     }
 }

@@ -31,7 +31,7 @@ body {
   margin-bottom: 2.6em;
 }
 
-#myInput {
+#userInput {
   background: #29373B;
   color: #E8FAFF;
   font-size: 1em;
@@ -42,14 +42,14 @@ body {
   font-family: 'Saira Extra Condensed', sans-serif;
 }
 
-#myInput::placeholder {
+#userInput::placeholder {
   color: #E8FAFF;
   font-style: italic;
   opacity: .5;
   font-family: 'Saira Extra Condensed', sans-serif;
 }
 
-#myInput:focus {
+#userInput:focus {
   outline: none;
   border-bottom: .3em solid #E8FAFF;
 }
@@ -72,10 +72,8 @@ body {
 .lg-sub-html {
   font-size: 1.3em;
   background-color: rgba(0, 0, 0, 0);
-    bottom: 15%;
+  bottom: 15%;
 }
-
-
 
 /*----------Thumbnail Styles----------*/
 
@@ -91,16 +89,14 @@ body {
 
 /*
 @media (min-width:414px) {
-  .wrap {
-    width: 100%;
-  }
+
 /*/
 
 @media (min-width:768px) {
   .wrap {
     width: 95%;
   }
-  #myInput {
+  #userInput {
     font-size: 1.5em;
   }
   .search-box {
