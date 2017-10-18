@@ -1,9 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
 .gallery-box {
   display: flex;
   justify-content: space-around;
   flex-flow: row wrap;
-  padding: 5%;
+
   width: 100%;
+  margin: auto;
 }
 
 .container {
@@ -11,18 +16,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5%;
-  margin-left: 2em;
+
+  /*margin-left: 2em;*/
 }
 
 .wrap {
-  width: 70%;
+  width: 100%;
   margin: auto;
+  max-width: 1440px;
 }
 
 .gallery-box a img{
     box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, .8);
-    margin: 0 2em 3em 0;
+    margin-bottom: 1.6em;
 }
 
 .lg-backdrop.in {
@@ -30,12 +36,14 @@
 }
 
 #myInput {
-    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
-    background-position: 10px 12px; /* Position the search icon */
-    background-repeat: no-repeat; /* Do not repeat the icon image */
-    width: 100%; /* Full-width */
-    font-size: 16px; /* Increase font-size */
-    padding: 12px 20px 12px 40px; /* Add some padding */
-    border: 1px solid #ddd; /* Add a grey border */
-    margin-bottom: 12px; /* Add some space below the input */
+    font-size: 1.3em;
+    width: 100%;
+    padding: 1em;
+    border: none;
+    margin-bottom: 1.3em ;
+    box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, .8);
+}
+
+.search-box {
+  width: 100%;
 }

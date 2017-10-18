@@ -13,7 +13,7 @@ $(document).ready(function() {
 
 
 //search function
-function searchBox() {
+function searchGallery() {
     // Variable declaration
     var input, filter, a, img;
     input = document.getElementById('myInput');

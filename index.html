@@ -6,6 +6,7 @@
   <title>Interactive Photo Gallery</title>
 
   <link type="text/css" rel="stylesheet" href="css/lightgallery/lightgallery.min.css" />
+  <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -13,8 +14,8 @@
   <div class="wrap">
     <div class="container">
 
-      <div class="searchBar">
-        <input type="text" id="myInput" onkeyup="searchBox()" placeholder="Search pictures..">
+      <div class="search-box">
+        <input type="text" id="myInput" onkeyup="searchGallery()" placeholder="Search Pictures...">
       </div>
 
       <div id="lightgallery" class="gallery-box">
