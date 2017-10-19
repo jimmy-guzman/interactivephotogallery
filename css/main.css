@@ -34,7 +34,7 @@ body {
 #userInput {
   background: #29373B;
   color: #E8FAFF;
-  font-size: 1em;
+  font-size: 1.5em;
   width: 100%;
   padding: .5em;
   border: none;
@@ -64,6 +64,7 @@ body {
 }
 
 /*-------Gallery Zoom-----------*/
+
 .lg-backdrop {
   background: #29373B;
 }
@@ -73,14 +74,15 @@ body {
 }
 
 .lg-sub-html {
-  font-size: 1.3em;
+  font-size: 1.5em;
   background-color: rgba(0, 0, 0, 0);
   bottom: 15%;
 }
 
 .lg-sub-html, .lg-toolbar {
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
 }
+
 /*----------Thumbnail Styles----------*/
 
 .gallery-box a {
@@ -93,26 +95,16 @@ body {
 
 /*----------media queries------------*/
 
-/*
-@media (min-width:414px) {
-
-/*/
-
 @media (min-width:768px) {
   .wrap {
     width: 95%;
-  }
-  #userInput {
-    font-size: 1.5em;
   }
   .search-box {
     width: 50%;
   }
   .lg-sub-html {
-    font-size: 1.3em;
     bottom: 7%;
   }
-
 }
 
 @media (min-width:1024px) {
