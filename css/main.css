@@ -75,6 +75,9 @@ body {
   bottom: 15%;
 }
 
+.lg-sub-html, .lg-toolbar {
+  background-color: rgba(0,0,0,0);
+}
 /*----------Thumbnail Styles----------*/
 
 .gallery-box a {
@@ -104,7 +107,6 @@ body {
   }
   .lg-sub-html {
     font-size: 1.3em;
-    background-color: rgba(0, 0, 0, .4);
     bottom: 7%;
   }
 }
