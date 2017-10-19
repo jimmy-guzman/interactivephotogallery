@@ -1,3 +1,5 @@
+/*global $*/
+
 $("#lightgallery").lightGallery({
   getCaptionFromTitleOrAlt: true,
   download: false,
@@ -7,9 +9,8 @@ $("#lightgallery").lightGallery({
   fullScreen: false
 });
 
-//search function
-function searchGallery() {
 
+$("#userInput").on('keyup change', function() {
   var input, thumbnails, img;
   input = document.getElementById("userInput");
   input = input.value.toUpperCase();
@@ -24,4 +25,4 @@ function searchGallery() {
       thumbnails[i].style.display = "none";
     }
   }
-}
+});
