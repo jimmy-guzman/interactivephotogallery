@@ -1,31 +1,12 @@
-$( window ).resize(function() {
-  location.reload(false);
+
+$("#lightgallery").lightGallery( {
+  getCaptionFromTitleOrAlt: true,
+  download: false,
+  counter: false,
+  toogleThumb: false,
+  showThumbByDefault: false,
+  fullScreen: false
 });
-
-
-if (document.documentElement.clientWidth > 1024) {
-
-  $("#lightgallery").lightGallery( {
-    getCaptionFromTitleOrAlt: true,
-    download: false,
-    counter: false,
-    toogleThumb: false,
-    showThumbByDefault: false,
-    fullScreen: false,
-    width: "60%"
-  });
-} else {
-
-  $("#lightgallery").lightGallery( {
-    getCaptionFromTitleOrAlt: true,
-    download: false,
-    counter: false,
-    toogleThumb: false,
-    showThumbByDefault: false,
-    fullScreen: false,
-    width: "100%"
-  });
-}
 
 //search function
 function searchGallery() {

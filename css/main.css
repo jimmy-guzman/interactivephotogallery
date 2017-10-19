@@ -109,6 +109,7 @@ body {
     font-size: 1.3em;
     bottom: 7%;
   }
+
 }
 
 @media (min-width:1024px) {
@@ -117,6 +118,9 @@ body {
   }
   .gallery-box a {
     margin: 2%;
+  }
+  .lg {
+    width: 60% !important;
   }
 }
 
