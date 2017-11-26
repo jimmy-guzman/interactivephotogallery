@@ -1,6 +1,7 @@
 /*global $*/
 
 $("#lightgallery").lightGallery({
+  selector: '.thumbnail a',
   getCaptionFromTitleOrAlt: true,
   download: false,
   counter: false,

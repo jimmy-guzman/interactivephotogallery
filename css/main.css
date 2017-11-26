@@ -61,7 +61,10 @@ body {
   justify-content: space-around;
   flex-flow: row wrap;
   width: 100%;
+ 
 }
+
+
 
 /*-------Gallery Zoom-----------*/
 
@@ -77,6 +80,7 @@ body {
   font-size: 1.5em;
   background-color: rgba(0, 0, 0, 0);
   bottom: 15%;
+  padding: 5px;
 }
 
 .lg-sub-html, .lg-toolbar {
@@ -85,15 +89,29 @@ body {
 
 /*----------Thumbnail Styles----------*/
 
-.gallery-box a {
-  margin: 2% .3em;
+.thumbnail {
+  display: block;
+  width: 100%;
+  margin-bottom: 2.4em;
 }
 
-.gallery-box a img {
+.thumbnail a {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+.thumbnail img {
   box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, .8);
 }
 
 /*----------media queries------------*/
+
+@media (min-width:480px) {
+  .thumbnail {
+    width: 50%;
+  }
+}
 
 @media (min-width:768px) {
   .wrap {
@@ -103,7 +121,11 @@ body {
     width: 50%;
   }
   .lg-sub-html {
-    bottom: 7%;
+    bottom: 10%;
+    padding: 10px 40px;
+  }
+  .thumbnail {
+    width: 33%;
   }
 }
 
@@ -111,11 +133,12 @@ body {
   .wrap {
     width: 90%;
   }
-  .gallery-box a {
-    margin: 2%;
-  }
+
   .lg {
     width: 70% !important;
+  }
+  .thumbnail {
+    width: 25%;
   }
 }
 
